@@ -1,0 +1,37 @@
+.Category{
+    width: 100%;
+    background-color: #fff;
+    padding: 100px 0;
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 30px 0;
+        flex-wrap: wrap;
+        .category__card{
+            width: calc(33% - 33.33px);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #F6F6F6;
+            border-radius: 13px;
+            transition: .4s ease;
+            .category__image{
+                object-fit: cover;
+            }
+            .category__text{
+                width: calc(50% - 10px);
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+        .category__card:hover{
+            transform: translateY(-10px);
+        }
+    }
+}

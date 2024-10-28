@@ -1,0 +1,47 @@
+.about{
+    background-color: #fff;
+    padding: 50px 0;
+    .about__subtitle{
+        color: blue;
+        text-align: center;
+    }
+    .about__title{
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .about__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        flex-wrap: wrap;
+        padding: 70px 0;
+        .about__card{
+            width: calc(50% - 25px);
+            padding: 25px 40px;
+            background-color: #F6F6F6;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            transition: .4s ease;
+            .about__text{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            .about__text img{
+                width: 150px;
+            }
+        }
+        .about__card:hover{
+            transform: translateY(-10px);
+        }
+    }
+    .about__btn{
+        display: block;
+        margin: 0 auto;
+    }
+}
